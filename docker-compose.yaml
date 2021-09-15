@@ -1,0 +1,16 @@
+version: "3"
+services:
+  database:
+    image: postgres:12
+    container_name: ppoker-db
+    environment:
+      POSTGRES_DB: ppoker
+      POSTGRES_USER: ppoker
+      POSTGRES_PASSWORD: ppoker
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis:6
+    container_name: ppoker-redis
+    ports:
+      - "6379:6379"
