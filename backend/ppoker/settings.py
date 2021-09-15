@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
+
+Quick-start development settings - unsuitable for production
+See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 """
 
 from pathlib import Path
@@ -15,11 +18,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -116,6 +115,5 @@ settings = dynaconf.DjangoDynaconf(
     load_dotenv=True,
     ENV_SWITCHER_FOR_DYNACONF="PPOKER_ENV",
     ENVVAR_PREFIX_FOR_DYNACONF="PPOKER",
-    SETTINGS_FILE_FOR_DYNACONF=["settings.yaml", "../settings.yaml"]
 )  # noqa
 # HERE ENDS DYNACONF EXTENSION LOAD (No more code below this line)

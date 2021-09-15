@@ -14,3 +14,6 @@ services:
     container_name: ppoker-redis
     ports:
       - "6379:6379"
+networks:
+  default:
+    name: "ppoker"
