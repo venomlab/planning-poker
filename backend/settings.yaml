@@ -3,13 +3,5 @@ default:
   SECRET_KEY: 'django-insecure-gn(khhtif_5e(38%-q(29g4*^zqfbjh-h1#q=(*7lspoee^41#'
   ALLOWED_HOSTS:
     - '*'
-  DATABASES:
-    default:
-      ENGINE: 'django.db.backends.postgresql'
-      NAME: 'ppoker'
-      USER: 'ppoker'
-      PASSWORD: 'ppoker'
-      HOST: 'localhost'
-      PORT: '5432'
   STATIC_URL: '/static/'
   TIME_ZONE: 'UTC'
